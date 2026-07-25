@@ -51,7 +51,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-white);
+  background: linear-gradient(180deg, #fffefb 0%, #f8f3eb 100%);
   color: var(--color-black);
   line-height: 1.7;
   overflow-x: hidden;
@@ -127,7 +127,7 @@ ul {
 .preloader {
   position: fixed;
   inset: 0;
-  background: var(--color-black);
+  background: linear-gradient(135deg, #fdfaf5 0%, #efe0cc 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,8 +176,8 @@ ul {
 }
 
 .nav-logo img {
-  height: 45px;
-  filter: brightness(0) invert(1);
+  height: 100px;
+  filter: none;
   transition: var(--transition);
 }
 
@@ -275,7 +275,7 @@ ul {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--color-black);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
 }
 
 .hero-bg {
@@ -586,7 +586,6 @@ ul {
   aspect-ratio: 3/4;
   overflow: hidden;
   cursor: pointer;
-  group: true;
 }
 
 .category-card img {
@@ -1002,9 +1001,20 @@ ul {
 }
 
 .value-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.12);
+  color: var(--color-gold);
+}
+
+.value-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .value-title {
